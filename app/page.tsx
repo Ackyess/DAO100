@@ -143,7 +143,7 @@ export default function Home() {
        <div className={styles.center}>
 {/* <p className={styles.tip}> */}
 <p>
-{/*  <a style={{ color: "#FF0000" }}>各账号正在逐步恢复 </a> */}
+ <a style={{ color: "#FF0000" }}>修复中 </a>
   下方有注意事项
   </p>
   </div>
