@@ -13,9 +13,12 @@ export default function Home() {
         [array[i], array[j]] = [array[j], array[i]];
       }
     };
-    const cardData = [
-      
-    ];
+    const cardData = [];
+
+    shuffleArray(cardData);
+    setCards(cardData);
+  }, []);
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -24,7 +27,7 @@ export default function Home() {
           <code className={styles.code}>ChatGPT</code>
         </p>
         <div></div>
-        <a style={{ color: "#808080" }}>Supported by DAO  </a>
+        <a style={{ color: "#808080" }}>Supported by DAO </a>
       </div>
 
       <div className={styles.center}>
@@ -37,13 +40,11 @@ export default function Home() {
           priority
         />
       </div>
-       <div className={styles.center}>
-{/* <p className={styles.tip}> */}
-<p>
- <a style={{ color: "#FF0000" }}></a>
-  网站因负荷过大，临时迁移。有问题联系我，企鹅342707641
-  </p>
-  </div>
+      <div className={styles.center}>
+        <p className={styles.tip}>
+          网站因负载过高, 临时迁移。有问题联系我, qq:34270764(备注来意{" "}
+        </p>
+      </div>
       <div className={styles.grid}>
         {cards.map((card, index) => (
           <a key={index} href={card.url} className={styles.card}>
@@ -55,10 +56,9 @@ export default function Home() {
 
       <div>
         <p className={styles.tip}>
-          
+          <p className={styles.spacer}></p>
         </p>
       </div>
-
     </main>
   );
 }
