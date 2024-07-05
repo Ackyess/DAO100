@@ -13,7 +13,9 @@ export default function Home() {
         [array[i], array[j]] = [array[j], array[i]];
       }
     };
-    
+    const cardData = [
+      
+    ];
   return (
     <main className={styles.main}>
       <div className={styles.description}>
