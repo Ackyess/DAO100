@@ -74,7 +74,7 @@ export default function Home() {
       </div>
        <div className={styles.center}>
 <p className={styles.tip}>
-  网站因负载过高, 已迁移至其他网址。如需使用，或有其他问题请联系我, qq:342707641 vx:q33006967(备注来意{" "}
+
   </p>
   </div>
       <div className={styles.grid}>
